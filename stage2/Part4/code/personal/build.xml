@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<project name="Part4" default="compile-all">
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="BlusterCritter-compile">
+		<mkdir dir="bin/BlusterCritter"/>
+		<javac srcdir="src/BlusterCritter" destdir="bin/BlusterCritter">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="ChameleonCritter-compile">
+		<mkdir dir="bin/ChameleonCritter"/>
+		<javac srcdir="src/ChameleonCritter" destdir="bin/ChameleonCritter">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="ChameleonKid-compile" depends="ChameleonCritter-compile">
+		<mkdir dir="bin/ChameleonKid"/>
+		<javac srcdir="src/ChameleonKid" destdir="bin/ChameleonKid">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+				<pathelement path="bin/ChameleonCritter"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="KingCrab-compile" depends="Crab-compile">
+		<mkdir dir="bin/KingCrab"/>
+		<javac srcdir="src/KingCrab" destdir="bin/KingCrab">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+				<pathelement path="bin/Crab"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="QuickCrab-compile" depends="Crab-compile">
+		<mkdir dir="bin/QuickCrab"/>
+		<javac srcdir="src/QuickCrab" destdir="bin/QuickCrab">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+				<pathelement path="bin/Crab"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="RockHound-compile">
+		<mkdir dir="bin/RockHound"/>
+		<javac srcdir="src/RockHound" destdir="bin/RockHound">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="Crab-compile">
+		<mkdir dir="bin/Crab"/>
+		<javac srcdir="src/Crab" destdir="bin/Crab">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+
+	<target name="compile-all" depends="clean,KingCrab-compile,BlusterCritter-compile,ChameleonCritter-compile,ChameleonKid-compile, RockHound-compile, QuickCrab-compile">
+		<mkdir dir="bin"/>
+	</target>
+
+	<target name="BlusterRunner">
+		<java classname="BlusterRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/BlusterCritter:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="KingCrabRunner">
+		<java classname="KingCrabRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/KingCrab:gridworld.jar"/>
+				<pathelement path="bin/Crab"/>
+			</classpath>
+		</java>
+	</target>
+
+
+	<target name="ChameleonKidRunner">
+		<java classname="ChameleonKidRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/ChameleonKid:gridworld.jar"/>
+				<pathelement path="bin/ChameleonCritter"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="ChameleonRunner">
+		<java classname="ChameleonRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/ChameleonCritter:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="QuickCrabRunner">
+		<java classname="QuickCrabRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/QuickCrab:gridworld.jar"/>
+				<pathelement path="bin/Crab"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="RockHoundRunner">
+		<java classname="RockHoundRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/RockHound:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+</project>

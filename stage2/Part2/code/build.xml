@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<project name="Part2" default="compile-all">
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="ZBug-compile">
+		<mkdir dir="bin/ZBug"/>
+		<javac srcdir="src/ZBug" destdir="bin/ZBug">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="SpiralBug-compile">
+		<mkdir dir="bin/SpiralBug"/>
+		<javac srcdir="src/SpiralBug" destdir="bin/SpiralBug">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="DancingBug-compile">
+		<mkdir dir="bin/DancingBug"/>
+		<javac srcdir="src/DancingBug" destdir="bin/DancingBug">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="CircleBug-compile">
+		<mkdir dir="bin/CircleBug"/>
+		<javac srcdir="src/CircleBug" destdir="bin/CircleBug">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+	<target name="compile-all" depends="clean,CircleBug-compile,ZBug-compile,SpiralBug-compile,DancingBug-compile">
+		<mkdir dir="bin"/>
+	</target>
+
+	<target name="run-ZBug" depends="compile-all">
+		<java classname="ZBugRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/ZBug:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="run-CircleBug" depends="compile-all">
+		<java classname="CircleBugRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/CircleBug:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+
+	<target name="run-DancingBug" depends="compile-all">
+		<java classname="DancingBugRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/DancingBug:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="run-SpiralBug" depends="compile-all">
+		<java classname="SpiralBugRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin/SpiralBug:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	
+</project>

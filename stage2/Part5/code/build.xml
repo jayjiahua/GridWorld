@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="Part5" default="run">
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin"/>
+		<javac srcdir="src" destdir="bin" includeantruntime="false">
+			<classpath>
+				<pathelement path=".:gridworld.jar"/>
+			</classpath>		
+		</javac>
+	</target>
+
+
+	<target name="run" depends="compile">
+		<java classname="GridRunner" fork="true">
+			<classpath>
+				<pathelement path="bin:gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+</project>

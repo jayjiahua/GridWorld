@@ -1,0 +1,27 @@
+功能介绍：
+    1. 非BeMeCritter类的成员碰到BeMeCritter类的成员后，会变为BeMeCritter类的成员
+    2. BeMeCritter类的成员，每10次行动将进行一次繁殖
+
+有关程序
+  编译：
+    ant
+  运行：
+    ant BeMeCritter
+  测试：
+    ant JumperTest
+  生成测试网页（生成结果在junit文件夹）:
+    ant junitreport
+  清除:
+    ant clean
+
+sonar:
+  先打开sonar，然后在命令行直接输入sonar-runner即可分析代码
+  P.S. 云平台有点小bug，就是即使你配好了环境，你也要再次source一下，不然会找不到路径，然后实在解决不了的话，就先退出云平台，然后再次输入学号，在进入ubuntu系统前先不连接先重启，然后进入到桌面后再source一下，不要问我为何知道，因为我就是这样被坑过来的，以此警示！
+
+
+P.S.
+Java配置：
+    1.7版本
+或者代开build.xml文件修改1.7为正确java版本配置即可
+
+
