@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="vinzor-virtual-machine" id="0" name="ImplementImageProcesserTest" package="" skipped="0" tests="8" time="2.625" timestamp="2015-08-24T07:29:59">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.SESSION_MANAGER" value="local/vinzor-virtual-machine:@/tmp/.ICE-unix/1560,unix/vinzor-virtual-machine:/tmp/.ICE-unix/1560" />
+
+          <property name="env.LESSOPEN" value="| /bin/lesspipe %s" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.7.0_45/jre/lib/resources.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/jce.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.7.0_45/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.7.0_45/jre/classes" />
+
+          <property name="env.PWD" value="/home/Administrator/Desktop/ImageProcessing" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="9d9d6948edc5545c1275c06700000002-1439827909.567852-576759012" />
+
+          <property name="env.SONAR_RUNNER_HOME" value="/home/Administrator/Downloads/sonar-runner-2.4" />
+
+          <property name="sun.desktop" value="gnome" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.SONAR_HOME" value="/home/Administrator/Downloads/sonar-3.7.4/bin/linux-x86-64" />
+
+          <property name="ant.home" value="/opt/apache-ant-1.9.6" />
+
+          <property name="java.runtime.version" value="1.7.0_45-b18" />
+
+          <property name="env.DISPLAY" value=":10.0" />
+
+          <property name="user.name" value="Administrator" />
+
+          <property name="env._" value="/opt/apache-ant-1.9.6/bin/ant" />
+
+          <property name="env.USER" value="Administrator" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="env.UID" value="1001" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/gnome:/usr/local/share/:/usr/share/" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="env.PATH" value="/home/Administrator/Downloads/sonar-runner-2.4/bin:/usr/lib/jvm/jdk1.7.0_45/bin:/opt/apache-ant-1.9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/X11R6/bin" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.7.0_45/jre/lib/amd64" />
+
+          <property name="ant.project.default-target" value="ImageReaderRunner" />
+
+          <property name="ant.project.name" value="ImageProcess" />
+
+          <property name="ant.file.type.ImageProcess" value="file" />
+
+          <property name="java.version" value="1.7.0_45" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-CFvHktgAYN,guid=751897d96f1f9085a9ff19a900005a28" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="env.SSH_AGENT_PID" value="1551" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.7.0_45/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.SHLVL" value="1" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="ant.file.ImageProcess" value="/home/Administrator/Desktop/ImageProcessing/build.xml" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/usr/lib/jvm/jdk1.7.0_45/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/home/Administrator/Desktop/ImageProcessing/build.xml" />
+
+          <property name="os.version" value="3.5.0-23-generic" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="24.45-b08" />
+
+          <property name="ant.library.dir" value="/opt/apache-ant-1.9.6/lib" />
+
+          <property name="junit.output.dir" value="junit" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="user.home" value="/home/Administrator" />
+
+          <property name="target" value="1.7" />
+
+          <property name="env.OLDPWD" value="/home/Administrator/Desktop" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.WINDOWID" value="71303177" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ImplementImageProcesserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/Administrator/Desktop/ImageProcessing/junit/TEST-ImplementImageProcesserTest.xml crashfile=/home/Administrator/Desktop/ImageProcessing/junitvmwatcher4506224390787421631.properties propsfile=/home/Administrator/Desktop/ImageProcessing/junit8944234027272637552.properties" />
+
+          <property name="java.class.path" value="/home/Administrator/Desktop/ImageProcessing/bin:/home/Administrator/Desktop/ImageProcessing/lib/ImageReader.jar:/home/Administrator/Desktop/ImageProcessing/lib/swing-worker-1.1.jar:/home/Administrator/Desktop/ImageProcessing/lib/appframework-1.0.3.jar:/home/Administrator/Desktop/ImageProcessing/lib/junit.jar:/home/Administrator/Desktop/ImageProcessing/lib/org.hamcrest.core_1.3.0.v201303031735.jar:/opt/apache-ant-1.9.6/lib/ant-launcher.jar:/opt/apache-ant-1.9.6/lib/ant.jar:/opt/apache-ant-1.9.6/lib/ant-junit.jar:/opt/apache-ant-1.9.6/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="env.HOME" value="/home/Administrator" />
+
+          <property name="debuglevel" value="source,lines,vars" />
+
+          <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-ykovlV/ssh" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.7.0_45/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="user.dir" value="/home/Administrator/Desktop/ImageProcessing" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.COLORTERM" value="gnome-terminal" />
+
+          <property name="basedir" value="/home/Administrator/Desktop/ImageProcessing" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="/opt/apache-ant-1.9.6/lib/ant.jar" />
+
+          <property name="source" value="1.7" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-ykovlV/gpg:0:1" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-ykovlV" />
+
+          <property name="ant.project.invoked-targets" value="test" />
+
+          <property name="env.LESSCLOSE" value="/bin/lesspipe %s %s" />
+
+      </properties>
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowGray1" time="0.368" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowGray2" time="0.408" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelB1" time="0.129" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelB2" time="0.491" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelG1" time="0.138" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelG2" time="0.419" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelR1" time="0.205" />
+
+      <testcase classname="ImplementImageProcesserTest" name="testShowChanelR2" time="0.358" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
